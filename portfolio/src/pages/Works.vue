@@ -1,14 +1,8 @@
 <template>
   <Layout>
-
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/unicorn-face.png" width="135" />
+    <h1>Works</h1>
 
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
     <article
         v-for="edge in $page.works.edges"
         :key="edge.node.id">
@@ -21,11 +15,6 @@
         <img :src='edge.node.thumbImage' :alt='edge.node.title' />
         <hr>
     </article>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
 
   </Layout>
 </template>
