@@ -6,13 +6,16 @@ import '~/styles/app.scss';
 import VueTypedJs from 'vue-typed-js'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-AOS.init();
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.use(VueTypedJs);
   var VueScrollTo = require('vue-scrollto');
   Vue.use(VueScrollTo);
+
+  if (process.isClient) {
+    AOS.init()
+  }
 
   Vue.component('Layout', DefaultLayout)
 

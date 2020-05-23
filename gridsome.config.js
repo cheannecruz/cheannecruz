@@ -35,11 +35,6 @@ module.exports = {
       addStyleResource(config.module.rule('sass').oneOf(type))
     })
 
-    // or if you use scss
-    types.forEach(type => {
-      addStyleResource(config.module.rule('scss').oneOf(type))
-    })
-
     const svgRule = config.module.rule('svg')
     svgRule.uses.clear()
     svgRule
@@ -52,7 +47,6 @@ module.exports = {
       options: {
         path: 'works/**/*.md',
         typeName: 'WorkPost', // remember this name
-        route: '/works/:title'  // customise to your liking.
       }
     },
     {
@@ -92,5 +86,8 @@ module.exports = {
 
       ]
     }
+  },
+  templates: {
+    WorkPost: '/works/:title'
   }
 }
