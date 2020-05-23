@@ -22,6 +22,8 @@ function addStyleResource (rule) {
 }
 
 module.exports = {
+  siteName: 'Cheryl Cruz',
+  siteUrl: 'https://cheannecruz.github.io',
   icon: {
     favicon: './src/favicon.png'
   },
@@ -44,7 +46,6 @@ module.exports = {
       .use('vue-svg-loader')
       .loader('vue-svg-loader')
 	},
-  siteName: 'Cheryl Cruz',
   plugins: [
     {
       use: '@gridsome/source-filesystem',

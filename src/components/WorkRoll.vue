@@ -33,6 +33,24 @@
   </section>
 </template>
 
+<page-query>
+  query {
+    works: allWorkPost(sortBy: "order", order: ASC) {
+      edges {
+        node {
+          id
+          title
+          summary
+          path
+          thumbImage
+          order
+          dateCreated
+        }
+      }
+    }
+  }
+</page-query>
+
 <script>
   export default {
     methods: {
