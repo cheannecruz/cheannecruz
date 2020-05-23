@@ -1,38 +1,13 @@
 <template>
   <Layout>
-
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/unicorn-face.png" width="135" />
-
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-    <article
-        v-for="edge in $page.works.edges"
-        :key="edge.node.id">
-        <h2>
-          <g-link :to='edge.node.path'>
-            {{edge.node.title}}
-          </g-link>
-        </h2>
-        <small>{{edge.node.summary}}</small>
-        <img :src='edge.node.thumbImage' :alt='edge.node.title' />
-        <hr>
-    </article>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+    <mainBanner />
+    <workRoll />
   </Layout>
 </template>
 
 <page-query>
   query {
-    works: allWorkPost {
+    works: allWorkPost(sortBy: "order", order: ASC) {
       edges {
         node {
           id
@@ -40,6 +15,8 @@
           summary
           path
           thumbImage
+          order
+          dateCreated
         }
       }
     }
@@ -47,15 +24,19 @@
 </page-query>
 
 <script>
+import mainBanner from '~/components/MainBanner';
+import workRoll from '~/components/WorkRoll';
 export default {
   metaInfo: {
-    title: 'Hello, world!'
-  }
+    title: 'Hello, welcome!'
+  },
+  components: {
+    mainBanner,
+    workRoll
+  },
 }
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
+<style lang="scss">
+
 </style>

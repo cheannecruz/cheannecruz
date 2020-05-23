@@ -1,9 +1,10 @@
 ---
-title: Work One Title
-summary: This is work one summary
+title: Diving Into Design Research
+summary: I've been learning a lot about Design Research recently. Here are some insights about the process and learnings I've gained from it.
 tags: ["quotes", "jeff goldblum", "actor"]
-dateCreated: 2019-06-22
-dateModified: 2019-06-22
+dateCreated: 2020-05-21
+dateModified: 2020-05-21
+order: 1
 thumbImage: https://placeimg.com/640/480/tech
 ---
 

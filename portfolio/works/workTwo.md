@@ -1,9 +1,10 @@
 ---
-title: Work Two Title
+title: "Crowfessor: Chatbot Concept"
 summary: This is work two summary
 tags: ["quotes", "jeff goldblum", "actor"]
 dateCreated: 2019-06-22
 dateModified: 2019-06-22
+order: 2
 thumbImage: https://placeimg.com/640/480/tech
 ---
 
