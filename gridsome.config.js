@@ -24,6 +24,7 @@ function addStyleResource (rule) {
 module.exports = {
   siteName: 'Cheryl Cruz',
   siteUrl: 'https://cheannecruz.github.io',
+  pathPrefix: '/cheannecruz',
   icon: {
     favicon: './src/favicon.png'
   },
