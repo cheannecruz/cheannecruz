@@ -75,20 +75,20 @@
   -moz-box-shadow: 0 1px 5px rgba(57, 63, 72, 0.1);
   box-shadow: 0 1px 5px rgba(57, 63, 72, 0.1);
 
-  @media only screen and (max-width: 768px) {
-    &.collapsed {
-      &::after {
-        content: '';
-        background: rgba(0,0,0,0.5);
-        z-index: 1;
-        position: absolute;
-        top: 60px;
-        left: 0px;
-        height: calc(100vh - 60px);
-        width: 100%;
-      }
-    }
-  }
+  // @media only screen and (max-width: 768px) {
+  //   &.collapsed {
+  //     &::after {
+  //       content: '';
+  //       background: rgba(0,0,0,0.5);
+  //       z-index: 1;
+  //       position: absolute;
+  //       top: 60px;
+  //       left: 0px;
+  //       height: calc(100vh - 60px);
+  //       width: 100%;
+  //     }
+  //   }
+  // }
 }
 
 .header__content {
