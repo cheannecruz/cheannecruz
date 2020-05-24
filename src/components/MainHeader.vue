@@ -145,7 +145,6 @@
     position: fixed;
     top: 60px;
     align-items: center;
-    z-index: 10;
 
     div {
       width: 50%;
@@ -163,7 +162,7 @@
     &.collapsed {
       right: 0;
       opacity: 1;
-      z-index: 1;
+      z-index: 10;
     }
   }
 }
@@ -179,8 +178,6 @@
   padding: 5px 10px;
   transition: all 0.5s;
   display: block;
-  max-width: 150px;
-  width: 70%;
   align-self: center;
 
   &:hover {
@@ -196,6 +193,9 @@
   @media only screen and (max-width: 768px) {
     padding: 10px 30px;
     margin: 10px 0px;
+    max-width: 180px;
+    min-width: 150px;
+    align-self: center;
   }
 }
 
