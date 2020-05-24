@@ -66,7 +66,7 @@
 
 <style lang='scss'>
 #myWorks {
-  padding: 3rem 0 10rem;
+  padding: 3rem 20px 10rem;
   overflow: hidden;
   background: #fff;
 }

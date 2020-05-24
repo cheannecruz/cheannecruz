@@ -84,6 +84,7 @@ export default {
     min-height: calc(100vh - 60px);
     background: #fff;
     position: relative;
+    padding: 0 30px;
 
      p {
        text-align: justify;
@@ -167,6 +168,64 @@ export default {
     right: 38%;
     width: 4%;
     opacity: .8;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .about-banner__shape1 {
+      width: 8%;
+    }
+
+    .about-banner__shape2 {
+      position: absolute;
+      width: 6%;
+    }
+
+    .about-banner__shape3 {
+      position: absolute;
+      width: 7%;
+    }
+
+    .about-banner__shape4 {
+      position: absolute;
+      width: 8%;
+    }
+
+    .about-banner__shape5 {
+      width: 6%;
+    }
+
+    .about-banner__shape6 {
+      width: 7%;
+    }
+  }
+
+  @media only screen and (max-width: 667px) {
+    .about-banner__shape1 {
+      width: 10%;
+    }
+
+    .about-banner__shape2 {
+      position: absolute;
+      width: 8%;
+    }
+
+    .about-banner__shape3 {
+      position: absolute;
+      width: 9%;
+    }
+
+    .about-banner__shape4 {
+      position: absolute;
+      width: 10%;
+    }
+
+    .about-banner__shape5 {
+      width: 8%;
+    }
+
+    .about-banner__shape6 {
+      width: 9%;
+    }
   }
 
   .about-section__heading {

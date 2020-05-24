@@ -54,11 +54,12 @@
 
 .header__content {
   max-width: 1280px;
-  padding: 0 2rem;
+  //padding: 0 2rem;
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 
 .header__home-link {
