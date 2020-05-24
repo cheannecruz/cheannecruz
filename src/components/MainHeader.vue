@@ -100,7 +100,7 @@
   padding: 0 20px;
   overflow: hidden;
   position: relative;
-  z-index: 10;
+  z-index: 20;
 }
 
 .header__home-link {
@@ -145,11 +145,13 @@
     position: fixed;
     top: 60px;
     align-items: center;
+    z-index: 100;
 
     div {
       width: 50%;
       background: #fff;
       align-self: flex-end;
+      align-items: center;
       text-align: center;
       height: calc(100vh - 60px);
       display: flex;
@@ -162,7 +164,6 @@
     &.collapsed {
       right: 0;
       opacity: 1;
-      z-index: 10;
     }
   }
 }
@@ -193,9 +194,11 @@
   @media only screen and (max-width: 768px) {
     padding: 10px 30px;
     margin: 10px 0px;
-    max-width: 180px;
-    min-width: 150px;
     align-self: center;
+
+    &:first-child {
+      margin-top: 30px;
+    }
   }
 }
 
