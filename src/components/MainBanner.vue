@@ -48,14 +48,15 @@
 <style lang='scss'>
 .main-banner {
   position: relative;
-  padding: 0 2rem;
+  padding: 0;
   height: calc(100vh - 60px);
   animation: gradient 15s ease infinite;
   overflow: hidden;
   z-index: 2;
 
-  @media only screen and (max-width: 768px) {
-    padding: 0;
+  @media only screen and (max-device-width : 900px) and (orientation: landscape) {
+    min-height: 700px;
+    margin-top: 10%;
   }
 }
 
@@ -108,12 +109,15 @@
 .main-banner__text-intro {
   font-size: 28px;
   font-family: 'Montserrat Alternates', sans-serif;
-  margin-bottom: 2rem;
+  margin: 0px;
   color: #fff;
   font-weight: 700;
   position: relative;
   min-width: 400px;
   z-index: 10;
+  line-height: 39px;
+  display: inline-block;
+  height: 50px;
 
   span {
     position: relative;
@@ -158,6 +162,12 @@
       left: -10px;
     }
   }
+
+  @media only screen and (max-width: 667px) {
+    font-size: 18px;
+    min-width: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .typed-element {
@@ -181,6 +191,10 @@
   @media only screen and (max-width: 768px) {
     font-size: 50px;
   }
+
+  @media only screen and (max-width: 667px) {
+    font-size: 32px;
+  }
 }
 
 .typed-cursor {
@@ -188,6 +202,14 @@
   font-family: 'Comfortaa', sans-serif;
   font-weight: 200;
   color: #fff !important;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 50px;
+  }
+
+  @media only screen and (max-width: 667px) {
+    font-size: 32px;
+  }
 }
 
 .main-banner__img-bg {
@@ -310,6 +332,10 @@
 
   @media only screen and (max-width: 768px) {
     bottom: 10%;
+  }
+
+  @media (orientation: landscape) {
+    display: none;
   }
 }
 
