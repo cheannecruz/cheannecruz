@@ -54,7 +54,7 @@
   overflow: hidden;
   z-index: 2;
 
-  @media only screen and (max-device-width : 900px) and (orientation: landscape) {
+  @media (max-device-width : 900px) and (orientation: landscape) {
     min-height: 700px;
     margin-top: 10%;
   }
@@ -75,6 +75,10 @@
   align-content: center;
   justify-content: center;
 
+  @media (max-device-width: 1024px) and (orientation: portrait){
+    flex-direction: column;
+  }
+
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     justify-content: flex-start;
@@ -88,6 +92,10 @@
   align-content: center;
   justify-content: center;
 
+  @media (max-device-width: 1024px) and (orientation: portrait) {
+    width: 100%;
+  }
+
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
@@ -100,6 +108,10 @@
   max-height: 677px;
   align-self: center;
   margin-top: -5%;
+
+  @media (max-device-width: 1024px) and (orientation: portrait) {
+    width: 80%;
+  }
 
   @media only screen and (max-width: 768px) {
     width: 80%;
@@ -148,6 +160,22 @@
     z-index: 4;
   }
 
+  @media (max-device-width: 1024px) and (orientation: portrait){
+    width: 80%;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 30px;
+
+    &::before {
+      left: 0px;
+    }
+
+    &::after {
+      content: '';
+      left: -10px;
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     width: 80%;
     text-align: center;
@@ -176,6 +204,10 @@
   min-height: 200px;
   z-index: 10;
   position: relative;
+
+  @media (max-device-width: 1024px) and (orientation: portrait) {
+    text-align: center;
+  }
 
   @media only screen and (max-width: 768px) {
     text-align: center;
@@ -334,6 +366,14 @@
   z-index: 10;
   width: auto;
   text-align: center;
+
+  @media (max-device-width: 1024px) and (orientation: portrait) {
+    bottom: -10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+  }
 
   @media only screen and (max-width: 768px) {
     bottom: -20%;
