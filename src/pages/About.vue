@@ -1,18 +1,66 @@
 <template>
   <Layout>
     <section class="about-banner">
-      <g-image src="~/assets/images/shape1.svg" class="about-banner__shape1"/>
-        <g-image src="~/assets/images/shape2.svg" class="about-banner__shape2"/>
-        <g-image src="~/assets/images/shape3.svg" class="about-banner__shape3"/>
-        <g-image src="~/assets/images/shape1.svg" class="about-banner__shape4"/>
-        <g-image src="~/assets/images/shape2.svg" class="about-banner__shape5"/>
-        <g-image src="~/assets/images/shape3.svg" class="about-banner__shape6"/>
+        <g-image src="@/assets/images/shape1.svg" class="about-banner__shape1"/>
+        <g-image src="@/assets/images/shape2.svg" class="about-banner__shape2"/>
+        <g-image src="@/assets/images/shape3.svg" class="about-banner__shape3"/>
+        <g-image src="@/assets/images/shape1.svg" class="about-banner__shape4"/>
+        <g-image src="@/assets/images/shape2.svg" class="about-banner__shape5"/>
+        <g-image src="@/assets/images/shape3.svg" class="about-banner__shape6"/>
     </section>
     <section class="about-section">
-      <g-image src="~/assets/images/che.jpeg" class="about-section__img-bg"/>
+      <g-image src="@/assets/images/che.jpeg" class="about-section__img-bg"/>
       <div class="about-section__content">
-        <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+        <h1 class="about-section__heading">Hello, I'm Cheryl!</h1>
+        <p>I'm a Frontend Web Developer currently working for <a href="https://www.evolution7.com.au" target="_blank">Evolution7</a>, an award winning digital agency based in Melbourne, Australia. <br/><br/>
+        I have a wide range of experience in the IT Industry, from being a Junior Business Systems Analyst to pursuing my passion for designing and building websites. I love designing websites and interfaces and enjoy seeing them come to life through coding. This passion of mine also allowed me to live and work in Japan for a MedTech and Merging & Acquisition company. I moved to Australia to study a Masters Degree in Digital Media and learn more about Design Research and UX.<br/><br/>
+        When I'm not busy with work and studies, I usually play video games or do other artsy stuff like handmade crafts, drawing, or painting. I also love to travel and take photos! <br/><br/>
+        I'm very open to learning new things, especially concerning UX. I want to be involved in meaningful projects, join an amazing team, and excel more in design and development.  <br/><br/></p>
+        <h1 class="about-section__heading">Here are some of the tools and tech I use!</h1>
+        <p>I create web assets using Affinity designer, design user interfaces in Figma, and sometimes use Principle for prototypes.
+        I mostly do development with HTML5, CSS3, Javascript, and frameworks such as ReactJS and VueJS.</p>
+        <ul class="about-tools">
+          <li>
+            <g-image src="@/assets/images/html-icon.svg"/>
+            <span>HTML 5</span>
+          </li>
+          <li>
+            <g-image src="@/assets/images/css-icon.svg"/>
+            <span>CSS 3</span>
+          </li>
+          <li>
+            <g-image src="@/assets/images/sass-icon.svg" class="icon-sass"/>
+            <span>Sass</span>
+          </li>
+          <li>
+            <g-image src="@/assets/images/js-icon.svg" class="icon-js"/>
+            <span>Javascript</span>
+          </li>
+          <li>
+            <g-image src="@/assets/images/vue-icon.svg" class="icon-vue"/>
+            <span>VueJS</span>
+          </li>
+          <li>
+            <g-image src="@/assets/images/react-icon.svg" class="icon-react"/>
+            <span>ReactJS</span>
+          </li>
+          <li>
+            <g-image src="@/assets/images/yarn-icon.svg" class="icon-yarn"/>
+            <span>Yarn</span>
+          </li>
+          <li>
+            <g-image src="@/assets/images/affinity-icon.svg" class="icon-affinity"/>
+            <span>Affinity Designer</span>
+          </li>
+          <li>
+            <g-image src="@/assets/images/figma-icon.svg"/>
+            <span>Figma</span>
+          </li>
+          <li>
+            <g-image src="@/assets/images/principle-icon.svg"/>
+            <span>Principle</span>
+          </li>
+      </ul>
       </div>
     </section>
   </Layout>
@@ -36,6 +84,15 @@ export default {
     min-height: calc(100vh - 60px);
     background: #fff;
     position: relative;
+
+     p {
+       text-align: justify;
+
+       a {
+         color: #2BB4F7;
+         text-decoration: none;
+       }
+     }
   }
 
   .about-section__content {
@@ -110,5 +167,74 @@ export default {
     right: 38%;
     width: 4%;
     opacity: .8;
+  }
+
+  .about-section__heading {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #2BB4F7;
+    font-size: 34px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .about-tools {
+    margin:  0;
+    padding: 2rem 2rem 5rem;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+    li {
+      position: relative;
+      padding: 20px;
+
+      img {
+        opacity: .5;
+        transition: all 0.5s;
+        display: block;
+        margin: 0 auto;
+
+        &.icon-affinity, &.icon-sass, &.icon-js, &.icon-vue, &.icon-react, &.icon-yarn {
+          width: 90%;
+        }
+      }
+
+      span {
+        opacity: 0;
+        transition: all 0.3s;
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 700;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 100%;
+        background:#2BB4F7;
+        color: #fff;
+        z-index: 10;
+        padding: 5px 0;
+        box-shadow: 0 5px 15px -8px rgba(0,0,0,.24), 0 8px 10px -5px rgba(0,0,0,.2);
+      }
+
+      &:hover {
+        cursor: pointer;
+        background: #fff;
+
+        img {
+          opacity: 1;
+          transform: scale(1.5);
+        }
+
+        span {
+          opacity: 1;
+        }
+      }
+    }
   }
 </style>

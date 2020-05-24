@@ -23,18 +23,18 @@
         </vue-typed-js>
       </div>
       <div class="main-banner__img">
-        <g-image src="~/assets/images/a.svg" class="main-banner__img-bg"/>
-        <g-image src="~/assets/images/b.svg" class="main-banner__img-body"/>
-        <g-image src="~/assets/images/c.svg" class="main-banner__img-arm-left"/>
-        <g-image src="~/assets/images/d.svg" class="main-banner__img-arm-right"/>
-        <g-image src="~/assets/images/e.svg" class="main-banner__img-head"/>
-        <g-image src="~/assets/images/f.svg" class="main-banner__img-laptop"/>
-        <g-image src="~/assets/images/shape1.svg" class="main-banner__shape1 floating-lg"/>
-        <g-image src="~/assets/images/shape2.svg" class="main-banner__shape2 floating-lg"/>
-        <g-image src="~/assets/images/shape3.svg" class="main-banner__shape3 floating-sm"/>
-        <g-image src="~/assets/images/shape1.svg" class="main-banner__shape4 floating"/>
-        <g-image src="~/assets/images/shape2.svg" class="main-banner__shape5 floating"/>
-        <g-image src="~/assets/images/shape3.svg" class="main-banner__shape6 floating-sm"/>
+        <g-image src="@/assets/images/a.svg" class="main-banner__img-bg"/>
+        <g-image src="@/assets/images/b.svg" class="main-banner__img-body"/>
+        <g-image src="@/assets/images/c.svg" class="main-banner__img-arm-left"/>
+        <g-image src="@/assets/images/d.svg" class="main-banner__img-arm-right"/>
+        <g-image src="@/assets/images/e.svg" class="main-banner__img-head"/>
+        <g-image src="@/assets/images/f.svg" class="main-banner__img-laptop"/>
+        <g-image src="@/assets/images/shape1.svg" class="main-banner__shape1 floating-lg"/>
+        <g-image src="@/assets/images/shape2.svg" class="main-banner__shape2 floating-lg"/>
+        <g-image src="@/assets/images/shape3.svg" class="main-banner__shape3 floating-sm"/>
+        <g-image src="@/assets/images/shape1.svg" class="main-banner__shape4 floating"/>
+        <g-image src="@/assets/images/shape2.svg" class="main-banner__shape5 floating"/>
+        <g-image src="@/assets/images/shape3.svg" class="main-banner__shape6 floating-sm"/>
       </div>
     </div>
   </div>
