@@ -77,6 +77,7 @@
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
+    justify-content: flex-start;
   }
 }
 
@@ -152,6 +153,7 @@
     width: 80%;
     text-align: center;
     align-self: center;
+    margin-top: 2rem;
 
     &::before {
       left: 0px;
@@ -178,6 +180,7 @@
 
   @media only screen and (max-width: 768px) {
     text-align: center;
+    min-height: 130px;
   }
 }
 
@@ -329,10 +332,6 @@
   bottom: 15%;
   text-decoration: none;
   z-index: 10;
-
-  @media only screen and (max-width: 768px) {
-    bottom: 10%;
-  }
 
   @media (orientation: landscape) {
     display: none;
