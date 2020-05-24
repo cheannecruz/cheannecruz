@@ -1,15 +1,22 @@
 <template>
-  <header class="header">
+  <header class="header" :class="{'collapsed': isCollapsed}">
     <div class="header__content">
       <g-link to="/" class="header__home-link">
         <logoImg />
         <h1 class="header__logo-name">Cheryl Cruz.</h1>
       </g-link>
-      <nav class="nav">
-        <g-link class="nav__link" to="/" exact :class="activePage == 'home' ? 'active' : ''">Home</g-link>
-        <g-link class="nav__link" to="/about/" exact>About</g-link>
-        <g-link class="nav__link" to="/works/" name="works">Works</g-link>
-        <g-link class="nav__link" to="/contact/" exact>Contact</g-link>
+      <button class="hamburger hamburger--spin" type="button" v-on:click="toggleActive(!collapsed)" :class="{'is-active': isCollapsed}">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <nav class="nav" :class="{'collapsed': isCollapsed}" @click="toggleActive(false)">
+        <div>
+          <g-link class="nav__link" to="/" exact :class="activePage == 'home' ? 'active' : ''">Home</g-link>
+          <g-link class="nav__link" to="/about/" exact>About</g-link>
+          <g-link class="nav__link" to="/works/">Works</g-link>
+          <g-link class="nav__link" to="/contact/" exact>Contact</g-link>
+        </div>
       </nav>
     </div>
   </header>
@@ -26,12 +33,29 @@
 <script>
   import logoImg from '~/assets/images/ccunicorn.svg'
   export default {
+    data () {
+      return {
+        collapsed: false
+      }
+    },
     components: {
       logoImg
     },
     computed: {
       activePage: function () {
         return this.$route.name
+      },
+      isCollapsed: function () {
+        return this.collapsed
+      }
+    },
+    methods: {
+      toggleActive (flag) {
+        this.collapsed = flag
+      },
+      reTollgeActive (flag) {
+        this.collapsed = flag
+        this.toggleActive(this.collapsed);
       }
     }
   };
@@ -50,16 +74,33 @@
    -webkit-box-shadow: 0 1px 5px rgba(57, 63, 72, 0.1);
   -moz-box-shadow: 0 1px 5px rgba(57, 63, 72, 0.1);
   box-shadow: 0 1px 5px rgba(57, 63, 72, 0.1);
+
+  @media only screen and (max-width: 768px) {
+    &.collapsed {
+      &::after {
+        content: '';
+        background: rgba(0,0,0,0.5);
+        z-index: 1;
+        position: fixed;
+        top: 60px;
+        left: 0px;
+        height: calc(100vh - 60px);
+        width: 100%;
+      }
+    }
+  }
 }
 
 .header__content {
   max-width: 1280px;
-  //padding: 0 2rem;
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
 }
 
 .header__home-link {
@@ -88,6 +129,43 @@
 
 .nav {
   display: flex;
+
+  div {
+    display: flex;
+  }
+
+  @media only screen and (max-width: 768px) {
+    right: -100%;
+    opacity: 0;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 60px);
+    position: fixed;
+    top: 60px;
+    align-items: center;
+    z-index: 10;
+
+    div {
+      width: 50%;
+      background: #fff;
+      align-self: flex-end;
+      text-align: center;
+      height: calc(100vh - 60px);
+      display: flex;
+      flex-direction: column;
+      -webkit-box-shadow: inset 0px 5px 5px 1px rgba(0,0,0,0.05);
+      -moz-box-shadow: inset 0px 5px 5px 1px rgba(0,0,0,0.05);
+      box-shadow: inset 0px 5px 5px 1px rgba(0,0,0,0.05);
+    }
+
+    &.collapsed {
+      right: 0;
+      opacity: 1;
+      z-index: 1;
+    }
+  }
 }
 
 .nav__link {
@@ -101,6 +179,9 @@
   padding: 5px 10px;
   transition: all 0.5s;
   display: block;
+  max-width: 150px;
+  width: 70%;
+  align-self: center;
 
   &:hover {
     color: #F891C7;
@@ -111,7 +192,42 @@
     color: #4B2086;
     border-bottom: 3px solid #4B2086;
   }
+
+  @media only screen and (max-width: 768px) {
+    padding: 10px 30px;
+    margin: 10px 0px;
+  }
 }
 
+.hamburger {
+  display: none !important;
+
+  &:focus {
+    outline: none !important;
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: inline-block !important;
+  }
+}
+
+.hamburger-box {
+  width: 25px !important;
+}
+
+.hamburger-inner {
+  background-color: #2BB4F7 !important;
+  width: 25px !important;
+
+  &::before {
+    background-color: #2BB4F7 !important;
+    width: 25px !important;
+  }
+
+  &::after {
+    background-color: #2BB4F7 !important;
+    width: 25px !important;
+  }
+}
 
 </style>

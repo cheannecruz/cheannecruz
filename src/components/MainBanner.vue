@@ -51,7 +51,6 @@
   padding: 0;
   height: calc(100vh - 60px);
   animation: gradient 15s ease infinite;
-  overflow: hidden;
   z-index: 2;
 
   @media (max-device-width : 900px) and (orientation: landscape) {
@@ -132,6 +131,7 @@
   line-height: 39px;
   display: inline-block;
   height: 50px;
+  margin-bottom: 20px;
 
   span {
     position: relative;

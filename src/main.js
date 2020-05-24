@@ -6,6 +6,7 @@ import '~/styles/app.scss';
 import VueTypedJs from 'vue-typed-js'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import 'hamburgers/dist/hamburgers.css';
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
