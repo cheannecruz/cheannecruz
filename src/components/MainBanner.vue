@@ -77,6 +77,7 @@
 
   @media (max-device-width: 1024px) and (orientation: portrait){
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   @media only screen and (max-width: 768px) {
@@ -94,6 +95,7 @@
 
   @media (max-device-width: 1024px) and (orientation: portrait) {
     width: 100%;
+    margin-top: 10%;
   }
 
   @media only screen and (max-width: 768px) {
