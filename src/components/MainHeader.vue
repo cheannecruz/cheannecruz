@@ -81,7 +81,7 @@
         content: '';
         background: rgba(0,0,0,0.5);
         z-index: 1;
-        position: fixed;
+        position: absolute;
         top: 60px;
         left: 0px;
         height: calc(100vh - 60px);
@@ -135,12 +135,12 @@
   }
 
   @media only screen and (max-width: 768px) {
-    right: -100%;
+    right: -50%;
     opacity: 0;
     transition: all 0.5s;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     height: calc(100vh - 60px);
     position: fixed;
     top: 60px;
@@ -148,7 +148,7 @@
     z-index: 100;
 
     div {
-      width: 50%;
+      width: 100%;
       background: #fff;
       align-self: flex-end;
       align-items: center;
