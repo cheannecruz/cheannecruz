@@ -31,14 +31,19 @@
 import mainHeader from '~/components/MainHeader';
 
 export default {
-    components: {
-        mainHeader
-    },
-    data: function () {
-      return {
+  components: {
+      mainHeader
+  },
+  data: function () {
+    return {
 
-      };
-    }
+    };
+  },
+  metaInfo: {
+    meta: [
+      { key: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' }
+    ]
+  }
 };
 </script>
 

@@ -31,11 +31,6 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Montserrat+Alternates'
   })
-
-  head.meta.push({
-    key: 'viewport',
-    content: 'wwidth=device-width, initial-scale=1, user-scalable=no'
-  })
 }
 
 

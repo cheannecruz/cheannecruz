@@ -3,11 +3,6 @@
     data-aos="fade-in"
     data-aos-delay="1000"
   >
-    <a href="#" class="main-banner__scroll" v-scroll-to="'#myWorks'">
-      <span class="main-banner__scroll-arrow">
-      </span>
-      <span class="main-banner__scroll-text">VIEW MY WORKS</span>
-    </a>
     <div class="main-banner__content">
       <div class="main-banner__text">
         <span class="main-banner__text-intro">
@@ -35,6 +30,11 @@
         <g-image src="@/assets/images/shape1.svg" class="main-banner__shape4 floating"/>
         <g-image src="@/assets/images/shape2.svg" class="main-banner__shape5 floating"/>
         <g-image src="@/assets/images/shape3.svg" class="main-banner__shape6 floating-sm"/>
+        <a href="#" class="main-banner__scroll" v-scroll-to="'#myWorks'">
+          <span class="main-banner__scroll-arrow">
+          </span>
+          <span class="main-banner__scroll-text">VIEW MY WORKS</span>
+        </a>
       </div>
     </div>
   </div>
@@ -103,7 +103,6 @@
 
   @media only screen and (max-width: 768px) {
     width: 80%;
-    margin-top: -10%;
   }
 }
 
@@ -180,6 +179,9 @@
 
   @media only screen and (max-width: 768px) {
     text-align: center;
+  }
+
+  @media only screen and (max-width: 667px) {
     min-height: 130px;
   }
 }
@@ -326,14 +328,22 @@
 
 .main-banner__scroll {
   position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  bottom: 15%;
+  left: 0%;
+  bottom: -5%;
   text-decoration: none;
   z-index: 10;
+  width: auto;
+  text-align: center;
 
-  @media (orientation: landscape) {
+  @media only screen and (max-width: 768px) {
+    bottom: -20%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  @media (max-device-width: 768px) and (orientation: landscape) {
     display: none;
   }
 }
