@@ -79,6 +79,10 @@
   font-size: 26px;
   color: #2BB4F7;
   margin: 0 10px;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .nav {

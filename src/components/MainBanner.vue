@@ -53,6 +53,10 @@
   animation: gradient 15s ease infinite;
   overflow: hidden;
   z-index: 2;
+
+  @media only screen and (max-width: 768px) {
+    padding: 0;
+  }
 }
 
 .main-banner__bg {
@@ -69,6 +73,10 @@
   min-height: calc(100vh - 60px);
   align-content: center;
   justify-content: center;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .main-banner__text {
@@ -77,6 +85,10 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .main-banner__img {
@@ -86,6 +98,11 @@
   max-height: 677px;
   align-self: center;
   margin-top: -5%;
+
+  @media only screen and (max-width: 768px) {
+    width: 80%;
+    margin-top: -10%;
+  }
 }
 
 .main-banner__text-intro {
@@ -95,6 +112,8 @@
   color: #fff;
   font-weight: 700;
   position: relative;
+  min-width: 400px;
+  z-index: 10;
 
   span {
     position: relative;
@@ -124,11 +143,32 @@
     left: -40px;
     z-index: 4;
   }
+
+  @media only screen and (max-width: 768px) {
+    width: 80%;
+    text-align: center;
+    align-self: center;
+
+    &::before {
+      left: 0px;
+    }
+
+    &::after {
+      content: '';
+      left: -10px;
+    }
+  }
 }
 
 .typed-element {
   display: block;
   min-height: 200px;
+  z-index: 10;
+  position: relative;
+
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .typing {
@@ -137,6 +177,10 @@
   font-weight: 700;
   color: #fff !important;
   display: inline;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 50px;
+  }
 }
 
 .typed-cursor {
@@ -263,6 +307,10 @@
   bottom: 15%;
   text-decoration: none;
   z-index: 10;
+
+  @media only screen and (max-width: 768px) {
+    bottom: 10%;
+  }
 }
 
 .main-banner__scroll-arrow {
