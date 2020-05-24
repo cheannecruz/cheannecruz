@@ -253,7 +253,8 @@ export default {
 
       img {
         opacity: .5;
-        transition: all 0.5s;
+        transition: all 0.5s ease;
+        -webkit-transition: all .5s ease;
         display: block;
         margin: 0 auto;
 
@@ -264,7 +265,8 @@ export default {
 
       span {
         opacity: 0;
-        transition: all 0.3s;
+        transition: all 0.3s ease;
+        -webkit-transition: all .3s ease;
         display: block;
         text-align: center;
         margin: 10px 0;

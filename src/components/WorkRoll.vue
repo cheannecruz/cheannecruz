@@ -114,7 +114,8 @@
   position: relative;
   height: 55px;
   line-height: 55px;
-  transition: all 0.5s;
+  transition: all 0.5s ease;
+  -webkit-transition: all .5s ease;
 
   &::before {
     content: '';
@@ -131,7 +132,8 @@
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
     box-sizing: border-box;
-    transition: all 0.5s;
+    transition: all 0.5s ease;
+    -webkit-transition: all .5s ease;
   }
 
   &::after {
@@ -145,7 +147,8 @@
     border: 2px solid #c648b1;
     box-sizing: border-box;
     border-radius: 50px;
-    transition: all 0.5s;
+    transition: all 0.5s ease;
+    -webkit-transition: all .5s ease;
   }
 
   &:hover {
@@ -187,6 +190,7 @@
     background-blend-mode: screen;
     border-radius: inherit;
     transition: opacity 0.2s ease 0s;
+    -webkit-transition: opacity 0.2s ease 0s;
     background: linear-gradient(223.34deg, rgb(87, 137, 209) 0%, rgb(100, 196, 229) 100%);
   }
 }
