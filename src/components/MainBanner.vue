@@ -6,7 +6,7 @@
     <div class="main-banner__content">
       <div class="main-banner__text">
         <span class="main-banner__text-intro">
-          <span>Hello I'm Cheryl,</span>
+          <span>Hello I'm Cheryl Cruz,</span>
         </span>
         <vue-typed-js
           :strings='["Frontent<br/>Developer.","UI Designer.","Aspiring UX<br/>Practitioner.","Digital Unicorn<br/>... &#129412; &#128517;"]'
