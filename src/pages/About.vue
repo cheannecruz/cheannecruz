@@ -1,15 +1,15 @@
 <template>
   <Layout>
     <section class="about-banner">
-        <g-image src="@/assets/images/shape1.svg" class="about-banner__shape1"/>
-        <g-image src="@/assets/images/shape2.svg" class="about-banner__shape2"/>
-        <g-image src="@/assets/images/shape3.svg" class="about-banner__shape3"/>
-        <g-image src="@/assets/images/shape1.svg" class="about-banner__shape4"/>
-        <g-image src="@/assets/images/shape2.svg" class="about-banner__shape5"/>
-        <g-image src="@/assets/images/shape3.svg" class="about-banner__shape6"/>
+        <g-image src="@/assets/images/shape1.svg" class="about-banner__shape1" immediate="true"/>
+        <g-image src="@/assets/images/shape2.svg" class="about-banner__shape2" immediate="true"/>
+        <g-image src="@/assets/images/shape3.svg" class="about-banner__shape3" immediate="true"/>
+        <g-image src="@/assets/images/shape1.svg" class="about-banner__shape4" immediate="true"/>
+        <g-image src="@/assets/images/shape2.svg" class="about-banner__shape5" immediate="true"/>
+        <g-image src="@/assets/images/shape3.svg" class="about-banner__shape6" immediate="true"/>
     </section>
     <section class="about-section">
-      <g-image src="@/assets/images/che.jpeg" class="about-section__img-bg"/>
+      <g-image src="@/assets/images/che.jpeg" class="about-section__img-bg" immediate="true"/>
       <div class="about-section__content">
         <h1 class="about-section__heading">Hello, I'm Cheryl!</h1>
         <p>I'm a Frontend Web Developer currently working for <a href="https://www.evolution7.com.au" target="_blank">Evolution7</a>, an award winning digital agency based in Melbourne, Australia. <br/><br/>
@@ -21,43 +21,43 @@
         I mostly do development with HTML5, CSS3, Javascript, and frameworks such as ReactJS and VueJS.</p>
         <ul class="about-tools">
           <li>
-            <g-image src="@/assets/images/html-icon.svg"/>
+            <g-image src="@/assets/images/html-icon.svg" immediate="true"/>
             <span>HTML 5</span>
           </li>
           <li>
-            <g-image src="@/assets/images/css-icon.svg"/>
+            <g-image src="@/assets/images/css-icon.svg" immediate="true"/>
             <span>CSS 3</span>
           </li>
           <li>
-            <g-image src="@/assets/images/sass-icon.svg" class="icon-sass"/>
+            <g-image src="@/assets/images/sass-icon.svg" immediate="true" class="icon-sass"/>
             <span>Sass</span>
           </li>
           <li>
-            <g-image src="@/assets/images/js-icon.svg" class="icon-js"/>
+            <g-image src="@/assets/images/js-icon.svg" immediate="true" class="icon-js"/>
             <span>Javascript</span>
           </li>
           <li>
-            <g-image src="@/assets/images/vue-icon.svg" class="icon-vue"/>
+            <g-image src="@/assets/images/vue-icon.svg" immediate="true" class="icon-vue"/>
             <span>VueJS</span>
           </li>
           <li>
-            <g-image src="@/assets/images/react-icon.svg" class="icon-react"/>
+            <g-image src="@/assets/images/react-icon.svg" immediate="true" class="icon-react"/>
             <span>ReactJS</span>
           </li>
           <li>
-            <g-image src="@/assets/images/yarn-icon.svg" class="icon-yarn"/>
+            <g-image src="@/assets/images/yarn-icon.svg" immediate="true" class="icon-yarn"/>
             <span>Yarn</span>
           </li>
           <li>
-            <g-image src="@/assets/images/affinity-icon.svg" class="icon-affinity"/>
+            <g-image src="@/assets/images/affinity-icon.svg" immediate="true" class="icon-affinity"/>
             <span>Affinity Designer</span>
           </li>
           <li>
-            <g-image src="@/assets/images/figma-icon.svg"/>
+            <g-image src="@/assets/images/figma-icon.svg" immediate="true"/>
             <span>Figma</span>
           </li>
           <li>
-            <g-image src="@/assets/images/principle-icon.svg"/>
+            <g-image src="@/assets/images/principle-icon.svg" immediate="true"/>
             <span>Principle</span>
           </li>
       </ul>

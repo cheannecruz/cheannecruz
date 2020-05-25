@@ -7,20 +7,20 @@
       </div>
     </div>
     <div class="footer">
-      <g-image src="~/assets/images/pattern-bg.png" class="footer__bg"/>
+      <g-image src="~/assets/images/pattern-bg.png" class="footer__bg" fit="cover" immediate="true"/>
       <h2 class="footer__heading">Let's Connect!</h2>
       <div class="footer__socials">
         <a href="https://dribbble.com/cheannecruz" target="_blank">
-          <g-image src="~/assets/images/dribble.svg" class="footer__dribble"/>
+          <g-image src="~/assets/images/dribble.svg" class="footer__dribble" immediate="true"/>
         </a>
         <a href="https://github.com/cheannecruz" target="_blank">
-          <g-image src="~/assets/images/github.svg" class="footer__github"/>
+          <g-image src="~/assets/images/github.svg" class="footer__github" immediate="true"/>
         </a>
         <a href="https://www.instagram.com/cheannecruz/" target="_blank">
-          <g-image src="~/assets/images/instagram.svg" class="footer__instagram"/>
+          <g-image src="~/assets/images/instagram.svg" class="footer__instagram" immediate="true"/>
         </a>
         <a href="https://www.linkedin.com/in/cheannecruz/" target="_blank">
-          <g-image src="~/assets/images/linkedin.svg" class="footer__linkedin"/>
+          <g-image src="~/assets/images/linkedin.svg" class="footer__linkedin" immediate="true"/>
         </a>
       </div>
     </div>

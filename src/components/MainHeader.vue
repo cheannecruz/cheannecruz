@@ -205,6 +205,7 @@
 
 .hamburger {
   display: none !important;
+  padding: 15px 0px 15px 15px !important;
 
   &:focus {
     outline: none !important;
