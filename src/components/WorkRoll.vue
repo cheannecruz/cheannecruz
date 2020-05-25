@@ -15,18 +15,22 @@
             {{edge.node.title}}
           </h2>
           <small class="work-roll__item-date">{{formatDate(edge.node.dateCreated)}}</small>
+
+          <small class="work-roll__item-summary">{{edge.node.summary}}</small>
+
           <g-link :to='edge.node.path' class="work-roll__item-link">
             Read Full Case Study
           </g-link>
-          <small class="work-roll__item-summary">{{edge.node.summary}}</small>
         </div>
         <div class="work-roll__item-image">
-          <img
-            :src='edge.node.thumbImage'
-            :alt='edge.node.title'
-            data-aos="fade-up"
-            data-aos-delay="300"
-          />
+          <g-link :to='edge.node.path'>
+            <img
+              :src='edge.node.thumbImage'
+              :alt='edge.node.title'
+              data-aos="fade-up"
+              data-aos-delay="300"
+            />
+          </g-link>
         </div>
       </article>
     </div>
@@ -84,6 +88,11 @@
   &:first-child {
     margin-top: 0;
   }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 
 .work-roll__item-details {
@@ -92,6 +101,10 @@
   justify-content: center;
   padding-right: 3rem;
   max-width: 360px;
+
+  @media only screen and (max-width: 768px) {
+    padding-right: 0rem;
+  }
 }
 
 .work-roll__item-title {
@@ -99,6 +112,10 @@
   font-family: 'Montserrat Alternates', sans-serif;
   margin-bottom: 0;
   font-weight: 700;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 26px;
+  }
 }
 
 .work-roll__item-link {
@@ -116,6 +133,10 @@
   line-height: 55px;
   transition: all 0.5s ease;
   -webkit-transition: all .5s ease;
+
+  @media only screen and (max-width: 768px) {
+    margin: 0.5rem 0 1rem;
+  }
 
   &::before {
     content: '';
@@ -192,6 +213,11 @@
     transition: opacity 0.2s ease 0s;
     -webkit-transition: opacity 0.2s ease 0s;
     background: linear-gradient(223.34deg, rgb(87, 137, 209) 0%, rgb(100, 196, 229) 100%);
+
+    @media only screen and (max-width: 768px) {
+      top: 25px;
+      right: -30px;
+    }
   }
 }
 
@@ -209,6 +235,7 @@
   line-height: 2;
   color: #586069;
   font-size: 14px;
+  padding-top: 0.5rem;
 }
 
 .work-roll__item-date {
@@ -223,10 +250,18 @@
   font-size: 34px;
   text-align: center;
   margin: 2rem 0 0;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 32px;
+  }
 }
 
 .work-roll__description {
   text-align: center;
   margin: 0 0 5rem;
+
+  @media only screen and (max-width: 768px) {
+    margin: 0 0 2rem;
+  }
 }
 </style>

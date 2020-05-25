@@ -6,7 +6,7 @@
 
 <page-query>
   query {
-    works: allWorkPost {
+    works: allWorkPost(sortBy: "order", order: ASC) {
       edges {
         node {
           id
@@ -14,6 +14,8 @@
           summary
           path
           thumbImage
+          order
+          dateCreated
         }
       }
     }

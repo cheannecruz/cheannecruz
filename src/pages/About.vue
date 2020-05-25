@@ -236,6 +236,10 @@ export default {
     font-size: 34px;
     text-align: center;
     margin: 0;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 32px;
+    }
   }
 
   .about-tools {

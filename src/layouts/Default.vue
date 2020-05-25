@@ -118,6 +118,10 @@ body {
   font-size: 34px;
   text-align: center;
   margin: 0 0 2rem;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 32px;
+  }
 }
 
 .footer__bg {

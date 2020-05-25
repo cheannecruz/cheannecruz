@@ -134,13 +134,13 @@
   }
 
   @media only screen and (max-width: 768px) {
-    right: -50%;
+    right: -70%;
     opacity: 0;
     transition: all 0.5s ease;
     -webkit-transition: all .5s ease;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     height: calc(100vh - 60px);
     position: fixed;
     top: 60px;
