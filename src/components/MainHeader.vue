@@ -18,6 +18,7 @@
           <g-link class="nav__link" to="/contact/" exact>Contact</g-link>
         </div>
       </nav>
+      <div class="gray-area" @click="toggleActive(false)"></div>
     </div>
   </header>
 </template>
@@ -75,10 +76,13 @@
   -moz-box-shadow: 0 1px 5px rgba(57, 63, 72, 0.1);
   box-shadow: 0 1px 5px rgba(57, 63, 72, 0.1);
 
+  .gray-area {
+    display: none;
+  }
+
   @media only screen and (max-width: 768px) {
     &.collapsed {
-      &::after {
-        content: '';
+      .gray-area {
         background: rgba(0,0,0,0.5);
         z-index: 1;
         position: absolute;
@@ -86,6 +90,7 @@
         left: 0px;
         height: calc(100vh - 60px);
         width: 100%;
+        display: block;
       }
     }
   }
