@@ -9,14 +9,15 @@ thumbImage: https://drive.google.com/uc?export=view&id=1dpsjA7bYRfcNkgNgyoV_UDoa
 mainBannerImage: https://drive.google.com/uc?export=view&id=1aISfyfarquXkvEq_saoo8ppoEJlJfqy0
 ---
 
-You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager? You know what? It is beets. I've crashed into a beet truck. God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs.
+Today, the shift from traditional media to digital is inevitable in different industries such as health, government, real estate, and education. As these industries undergo digital transformations, the need to create new digital solutions and products that are intuitive, usable, and human-centered is increasing.Along with this change and demand brings about the relevance of Design Reserch.
+
 
 ![alt text](../src/assets/images/design-research.jpg)
 
-Just my luck, no ice. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager? God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs.
+Design research is foundational to creating products, services, and systems that respond to human needs. It is a crucial step in creating optimal user experience. It allows you to understand complex human behavior and turn that into actionable insights to improve your design.
 
-Itemized lists look like:
+By conducting design research you will be able to learn more about your users or customers, and it will help you answer these questions:
 
-  * this one
-  * that one
-  * the other one
+  * Who are your users or customers?
+  * What are their pain-points or problems they are facing?
+  * How will they use your product or service?

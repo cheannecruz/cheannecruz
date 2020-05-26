@@ -11,9 +11,9 @@
     </section>
     <section class="work-page__section">
       <div class="work-page__main-content">
-        <h1>{{$page.post.title}}</h1>
-        <p>{{$page.post.summary}}</p>
-        <div class="blog__content" v-html="$page.post.content"></div>
+        <h1 class="work-page__heading">{{$page.post.title}}</h1>
+        <small class="work-page__date">Cheryl Cruz | {{formatDate($page.post.dateCreated)}}</small>
+        <div class="work-page__content" v-html="noFirstLetter($page.post.content)"></div>
       </div>
     </section>
   </Layout>
@@ -24,13 +24,33 @@
   query Work ($path: String){
     post: workPost (path: $path) {
       title
-      summary
       content
       mainBannerImage
+      dateCreated
     }
   }
 </page-query>
 <script>
+  export default {
+    data() {
+      return {
+        firstLetter: '',
+      }
+    },
+    methods: {
+      formatDate(thisDate) {
+        const months = ["JAN", "FEB", "MAR","APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+        let current_datetime = new Date(thisDate);
+        let formatted_date = current_datetime.getDate() + " " + months[current_datetime.getMonth()] + " " + current_datetime.getFullYear();
+        return formatted_date;
+      },
+      noFirstLetter(content) {
+        const strip = content.substring(4);
+        const pTag = content.slice(0, 3) + '<span>' + content.slice(3, 4) + '</span>';
+        return pTag + strip;
+      }
+    }
+  };
 </script>
 <style lang="scss">
 .work-page__main-banner {
@@ -54,6 +74,62 @@
     img {
       width: 100%;
     }
+  }
+}
+.work-page__heading {
+  font-family: 'Montserrat Alternates', sans-serif;
+  padding: 1.5em 0 0;
+  font-size: 46px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.work-page__date {
+  color: #586069;
+  font-size: 14px;
+  line-height: 2;
+  padding-bottom: 3em;
+  display: block;
+}
+
+.work-page__content {
+  line-height: 2;
+  margin-bottom: 5em;
+
+  span:first-of-type {
+    float: left;
+    font-size: 100px;
+    margin-right: 10px;
+    vertical-align: baseline;
+    font-weight: 700;
+    height: 100px;
+    line-height: 1;
+    margin-top: -5px;
+  }
+
+  img:first-of-type {
+    float: left;
+    margin: 0 20px 10px 0px;
+    max-width: 400px;
+  }
+
+  p {
+    margin: 2em 0;
+  }
+
+  ul {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+  }
+
+  ul li::before {
+    content: "\2022";
+    color: #2BB4F7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
   }
 }
 </style>

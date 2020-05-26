@@ -18,18 +18,18 @@
         </vue-typed-js>
       </div>
       <div class="main-banner__img">
-        <g-image src="@/assets/images/a.svg" class="main-banner__img-bg" immediate="true"/>
-        <g-image src="@/assets/images/b.svg" class="main-banner__img-body" immediate="true"/>
-        <g-image src="@/assets/images/c.svg" class="main-banner__img-arm-left" immediate="true"/>
-        <g-image src="@/assets/images/d.svg" class="main-banner__img-arm-right" immediate="true"/>
-        <g-image src="@/assets/images/e.svg" class="main-banner__img-head" immediate="true"/>
-        <g-image src="@/assets/images/f.svg" class="main-banner__img-laptop" immediate="true"/>
-        <g-image src="@/assets/images/shape1.svg" class="main-banner__shape1 floating-lg" immediate="true"/>
-        <g-image src="@/assets/images/shape2.svg" class="main-banner__shape2 floating-lg" immediate="true"/>
-        <g-image src="@/assets/images/shape3.svg" class="main-banner__shape3 floating-sm" immediate="true"/>
-        <g-image src="@/assets/images/shape1.svg" class="main-banner__shape4 floating" immediate="true"/>
-        <g-image src="@/assets/images/shape2.svg" class="main-banner__shape5 floating" immediate="true"/>
-        <g-image src="@/assets/images/shape3.svg" class="main-banner__shape6 floating-sm" immediate="true"/>
+        <g-image src="@/assets/images/a.svg" class="main-banner__img-bg"/>
+        <g-image src="@/assets/images/b.svg" class="main-banner__img-body"/>
+        <g-image src="@/assets/images/c.svg" class="main-banner__img-arm-left"/>
+        <g-image src="@/assets/images/d.svg" class="main-banner__img-arm-right"/>
+        <g-image src="@/assets/images/e.svg" class="main-banner__img-head"/>
+        <g-image src="@/assets/images/f.svg" class="main-banner__img-laptop"/>
+        <g-image src="@/assets/images/shape1.svg" class="main-banner__shape1 floating-lg"/>
+        <g-image src="@/assets/images/shape2.svg" class="main-banner__shape2 floating-lg"/>
+        <g-image src="@/assets/images/shape3.svg" class="main-banner__shape3 floating-sm"/>
+        <g-image src="@/assets/images/shape1.svg" class="main-banner__shape4 floating"/>
+        <g-image src="@/assets/images/shape2.svg" class="main-banner__shape5 floating"/>
+        <g-image src="@/assets/images/shape3.svg" class="main-banner__shape6 floating-sm"/>
       </div>
       <a href="#" class="main-banner__scroll" v-scroll-to="'#myWorks'">
         <span class="main-banner__scroll-arrow">
@@ -315,7 +315,7 @@
   position: absolute;
   z-index: 5;
   top: 1%;
-  right: 0%;
+  right: -8%;
   width: 16%;
 }
 
@@ -415,7 +415,7 @@
   background-color: #f85ccf;
   padding: 15px 60px;
   font-size: 14px;
-  border-right: 5px solid #c648b1;
-  border-bottom: 5px solid #c648b1;
+  border: 2px solid #c648b1;
+  box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
 }
 </style>
