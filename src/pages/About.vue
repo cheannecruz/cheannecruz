@@ -9,7 +9,7 @@
         <g-image src="@/assets/images/shape3.svg" class="about-banner__shape6" immediate="true"/>
     </section>
     <section class="about-section">
-      <g-image src="@/assets/images/che.jpeg" class="about-section__img-bg" immediate="true"/>
+      <g-image src="@/assets/images/che.jpeg" class="about-section__img-bg"/>
       <div class="about-section__content">
         <h1 class="about-section__heading">Hello, I'm Cheryl!</h1>
         <p>I'm a Frontend Web Developer currently working for <a href="https://www.evolution7.com.au" target="_blank">Evolution7</a>, an award winning digital agency based in Melbourne, Australia. <br/><br/>

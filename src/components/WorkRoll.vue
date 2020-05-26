@@ -24,7 +24,7 @@
         </div>
         <div class="work-roll__item-image">
           <g-link :to='edge.node.path'>
-            <img
+            <g-image
               :src='edge.node.thumbImage'
               :alt='edge.node.title'
               data-aos="fade-up"
@@ -195,6 +195,7 @@
 
   img {
     width: 100%;
+    max-width: 600px;
     align-self: center;
   }
 

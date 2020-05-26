@@ -6,6 +6,7 @@ dateCreated: 2019-06-22
 dateModified: 2019-06-22
 order: 2
 thumbImage: https://placeimg.com/640/480/tech
+mainBannerImage: https://placeimg.com/3000/800/tech
 ---
 
 Content for **Work One Title**. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.

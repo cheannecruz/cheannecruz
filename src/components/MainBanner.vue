@@ -30,12 +30,12 @@
         <g-image src="@/assets/images/shape1.svg" class="main-banner__shape4 floating" immediate="true"/>
         <g-image src="@/assets/images/shape2.svg" class="main-banner__shape5 floating" immediate="true"/>
         <g-image src="@/assets/images/shape3.svg" class="main-banner__shape6 floating-sm" immediate="true"/>
-        <a href="#" class="main-banner__scroll" v-scroll-to="'#myWorks'">
-          <span class="main-banner__scroll-arrow">
-          </span>
-          <span class="main-banner__scroll-text">VIEW MY WORKS</span>
-        </a>
       </div>
+      <a href="#" class="main-banner__scroll" v-scroll-to="'#myWorks'">
+        <span class="main-banner__scroll-arrow">
+        </span>
+        <span class="main-banner__scroll-text">VIEW MY WORKS</span>
+      </a>
     </div>
   </div>
 </template>
@@ -73,6 +73,10 @@
   min-height: calc(100vh - 60px);
   align-content: center;
   justify-content: center;
+
+  @media only screen and (max-width: 1280px) {
+    max-width: 1000px;
+  }
 
   @media (max-device-width: 1024px) and (orientation: portrait){
     flex-direction: column;
@@ -363,25 +367,20 @@
 .main-banner__scroll {
   position: absolute;
   left: 0%;
-  bottom: -5%;
+  top: 80%;
   text-decoration: none;
   z-index: 10;
   width: auto;
   text-align: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 
   @media (max-device-width: 1024px) and (orientation: portrait) {
-    bottom: -10%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
     width: 100%;
   }
 
   @media only screen and (max-width: 768px) {
-    bottom: -20%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
     width: 100%;
   }
 
@@ -414,7 +413,7 @@
   z-index: 20;
   font-weight: 700;
   background-color: #f85ccf;
-  padding: 15px 20px;
+  padding: 15px 60px;
   font-size: 14px;
   border-right: 5px solid #c648b1;
   border-bottom: 5px solid #c648b1;
