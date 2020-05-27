@@ -3772,6 +3772,12 @@ gray-matter@^4.0.2:
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
+gridsome-plugin-modal@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-modal/-/gridsome-plugin-modal-0.1.1.tgz#69f718566bf9bd08621bd29c01838847a317302b"
+  dependencies:
+    vue-js-modal "^1.3.28"
+
 gridsome-plugin-svg@^0.0.13:
   version "0.0.13"
   resolved "https://registry.yarnpkg.com/gridsome-plugin-svg/-/gridsome-plugin-svg-0.0.13.tgz#012c72e2b2508a641c3c9edaa301bf717cf7b744"
@@ -8210,6 +8216,10 @@ vm-browserify@^1.0.1:
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
+
+vue-js-modal@^1.3.28:
+  version "1.3.35"
+  resolved "https://registry.yarnpkg.com/vue-js-modal/-/vue-js-modal-1.3.35.tgz#5f54de1a30a5f977121bfe6b2a1a5498bce2752a"
 
 vue-js-modal@^2.0.0-rc.3:
   version "2.0.0-rc.3"

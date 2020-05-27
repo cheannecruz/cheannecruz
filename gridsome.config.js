@@ -44,6 +44,9 @@ module.exports = {
 	},
   plugins: [
     {
+      use: 'gridsome-plugin-modal'
+    },
+    {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'works/**/*.md',
