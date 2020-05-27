@@ -24,15 +24,18 @@
         </a>
       </div>
     </div>
+    <contactForm />
   </div>
 </template>
 
 <script>
 import mainHeader from '~/components/MainHeader';
+import contactForm from '~/components/ContactForm';
 
 export default {
   components: {
-      mainHeader
+      mainHeader,
+      contactForm
   },
   data: function () {
     return {

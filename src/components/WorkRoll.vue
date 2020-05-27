@@ -133,6 +133,7 @@
   line-height: 55px;
   transition: all 0.5s ease;
   -webkit-transition: all .5s ease;
+  border-radius: 3px;
 
   @media only screen and (max-width: 768px) {
     margin: 0.5rem 0 1rem;
@@ -192,11 +193,14 @@
   position: relative;
   display: flex;
   align-content: center;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
 
   img {
     width: 100%;
     max-width: 600px;
     align-self: center;
+    border-radius: 10px;
   }
 
   &::before {
@@ -211,13 +215,21 @@
     width: 100%;
     background-blend-mode: screen;
     border-radius: inherit;
-    transition: opacity 0.2s ease 0s;
-    -webkit-transition: opacity 0.2s ease 0s;
-    background: linear-gradient(223.34deg, rgb(87, 137, 209) 0%, rgb(100, 196, 229) 100%);
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    background: linear-gradient(223.34deg, rgb(108, 110, 231) 0%, rgb(100, 196, 229) 100%);
+    border-radius: 5px;
 
     @media only screen and (max-width: 768px) {
       top: 25px;
       right: -30px;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.02);
+    &::before {
+      opacity: 0.80;
     }
   }
 }
@@ -227,6 +239,12 @@
     .work-roll__item-image {
       &::before {
         background: linear-gradient(223.34deg, rgb(108, 110, 231) 0%, rgb(241, 87, 115) 100%);
+
+        &:hover {
+          &::before {
+            opacity: 0.80;
+          }
+        }
       }
     }
   }

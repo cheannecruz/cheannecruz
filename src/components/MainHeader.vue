@@ -15,7 +15,7 @@
           <g-link class="nav__link" to="/" exact :class="activePage == 'home' ? 'active' : ''">Home</g-link>
           <g-link class="nav__link" to="/about/" exact>About</g-link>
           <g-link class="nav__link" to="/works/">Works</g-link>
-          <g-link class="nav__link" to="/contact/" exact>Contact</g-link>
+          <a class="nav__link" @click="showContact();">Contact</a>
         </div>
       </nav>
       <div class="gray-area" @click="toggleActive(false)"></div>
@@ -57,6 +57,12 @@
       reTollgeActive (flag) {
         this.collapsed = flag
         this.toggleActive(this.collapsed);
+      },
+      showContact () {
+        this.$modal.show('contact-form');
+      },
+      hideContact () {
+        this.$modal.hide('contact-form');
       }
     }
   };
@@ -190,6 +196,7 @@
   &:hover {
     color: #F891C7;
     border-bottom: 3px solid #F891C7;
+    cursor: pointer;
   }
 
   &.active {

@@ -4,6 +4,7 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import '~/styles/app.scss';
 import VueTypedJs from 'vue-typed-js'
+import VModal from 'vue-js-modal'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'hamburgers/dist/hamburgers.css';
@@ -11,6 +12,7 @@ import 'hamburgers/dist/hamburgers.css';
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.use(VueTypedJs);
+  Vue.use(VModal);
   var VueScrollTo = require('vue-scrollto');
   Vue.use(VueScrollTo);
 
