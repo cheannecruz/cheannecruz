@@ -2,9 +2,11 @@
 title: Diving Into Design Research
 summary: I've been learning a lot about Design Research recently. Here are some insights about the process and learnings I've gained from it.
 tags: ["quotes", "jeff goldblum", "actor"]
+roles: ["Design Research", "UX"]
 dateCreated: 2020-05-21
 dateModified: 2020-05-21
 order: 1
+projectName: null
 thumbImage: https://drive.google.com/uc?export=view&id=1dpsjA7bYRfcNkgNgyoV_UDoaeZyI3OTn
 mainBannerImage: https://drive.google.com/uc?export=view&id=1aISfyfarquXkvEq_saoo8ppoEJlJfqy0
 ---
@@ -25,7 +27,7 @@ By conducting design research you will be able to learn more about your users or
   * What are their pain-points or problems they are facing?
   * How will they use your product or service?
 
-How can this be achieved? There's an endless number of ways to collect data about your customers. One of the most common approaches is to conduct **focus groups**, **usability sessions**, **surveys**, and **interviews** which involves you or your team going directly to the source (your customers) to ask questions and gather data.
+One of the most common approaches is to conduct **focus groups**, **usability sessions**, **surveys**, and **interviews** which involves you or your team going directly to the source (your customers) to ask questions and gather data.
 
 <div class="img-holder">
 
@@ -35,7 +37,7 @@ How can this be achieved? There's an endless number of ways to collect data abou
 
 </div>
 
-Through conducting these, you will be able to design based on facts and not assumptions. By analyzing the gathered data, you can point out common situations and traits of your user. This will help you Identify a **User Persona**. Personas are fictional characters designers use to reflect user types, pinpointing who they are and what they do with products in relevant contexts. Designers create personas from user data, to understand user characteristics, needs, goals, etc. and gain valuable insights into user journeys.
+Through conducting these, you will be able to design based on facts and not assumptions. By analyzing the gathered data, you can point out common situations and traits of your user. This will help you Identify a **User Persona**. The user persona below is a fictional characters designed to reflect the most common traits of an International Student based on the conducted user interview. This will give an understanding of the user's characteristics, needs, goals, etc. and gain valuable insights into user journeys.
 
 <div class="img-holder">
 
@@ -47,7 +49,7 @@ You can also create one using [Figma](https://figma.com/). View file [Here](http
 </div>
 
 
-A **User Journey Map** is a visual representation of the customer experience. It identifies vital interactions and describes in detail the customer's goals, motivations, pain-points, and feelings at each step.
+A **User Journey Map** is a visual representation of the customer experience. It identifies vital interactions and describes in detail the customer's goals, motivations, pain-points, and feelings at each step. The Journey map below describes my journey of being an International student. It gives insights about my goals,  the things I did, what I thought, and feel during the process.
 
 <div class="img-holder">
 
@@ -58,22 +60,23 @@ View Journey Map [Here](https://miro.com/app/board/o9J_krjFFoo=/).
 
 </div>
 
+A **User Story** are a few sentences in simple language that outline the desired outcome. It’s an end goal, not a feature, expressed from the software user’s perspective.
 
-Design research takes time, resources, and preparation, but the results are worth it. Here are four of the top benefits of design research:
+<div class="img-holder">
+
+![alt Journey Map](../src/assets/images/userStory.png)
+
+View User Journey [Here](https://www.figma.com/file/w8qHkj3kcYuhtEgJvKX0eb/User-Persona?node-id=0%3A1).
+
+</div>
+
+
+Design research takes time, resources, and preparation, but the results are worth it. It teaches us to keep in mind that "We are not our users" as it guides teams to uncover insights with the rigorous study of the people they serve and their context. Here are four of the top benefits of design research:
 
 * Allows you to design based on facts and not assumptions.
 * Helps with focus and prioritization.
 * Fosters more empathy for your customers.
 * Results in happier customers.
 
-Design Research teaches us to keep in mind that "We are not our users" as it guides teams to uncover insights with the rigorous study of the people they serve and their context. There is always something new to learn.
-
----
-<div class="references">
-  <p>References:</p>
-
-  * Emily Esposito, A quick guide to design research, May 8, 2018, https://www.invisionapp.com/inside-design/design-research/
-  * Optimizely, User Journey Map, https://www.optimizely.com/anz/optimization-glossary/user-journey-map/
-  * Interaction Design Foundation, Pesonas, https://www.interaction-design.org/literature/topics/personas
-
-</div>
+There is always something new to learn about your users. Do you have a project in mind? Let's dive-in through this process together!
+Contact me if you need any help embarking through this journey!

@@ -17,6 +17,7 @@
           thumbImage
           order
           dateCreated
+          projectName
         }
       }
     }
@@ -29,6 +30,11 @@ import workRoll from '~/components/WorkRoll';
 export default {
   metaInfo: {
     title: 'Hello, welcome!'
+  },
+  data: function () {
+    return {
+      isLoading: true
+    };
   },
   components: {
     mainBanner,

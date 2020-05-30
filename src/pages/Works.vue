@@ -16,6 +16,7 @@
           thumbImage
           order
           dateCreated
+          projectName
         }
       }
     }

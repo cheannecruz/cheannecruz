@@ -12,7 +12,12 @@
     <section class="work-page__section">
       <div class="work-page__main-content">
         <h1 class="work-page__heading">{{$page.post.title}}</h1>
-        <small class="work-page__date">Cheryl Cruz | {{formatDate($page.post.dateCreated)}}</small>
+        <small class="work-page__name">{{$page.post.projectName}}</small>
+        <p class="work-page__role">
+          <span v-for="role in $page.post.roles" class="work-page__role-item">
+            {{role}}
+          </span>
+        </p>
         <div class="work-page__content" v-html="noFirstLetter($page.post.content)"></div>
       </div>
     </section>
@@ -24,9 +29,11 @@
   query Work ($path: String){
     post: workPost (path: $path) {
       title
+      roles
       content
       mainBannerImage
       dateCreated
+      projectName
     }
   }
 </page-query>
@@ -55,12 +62,14 @@
 <style lang="scss">
 .work-page__main-banner {
   position: relative;
-  height: 300px;
+  height: 50vh;
   overflow: hidden;
 }
 .work-page__main-banner-img {
   width: 100%;
+  height: 100%;
   display: block;
+  object-fit: cover;
 }
 .work-page__section {
   background: #fff;
@@ -84,12 +93,28 @@
   font-weight: 700;
 }
 
-.work-page__date {
+.work-page__name {
   color: #586069;
   font-size: 14px;
   line-height: 2;
-  padding-bottom: 3em;
   display: block;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+}
+
+.work-page__role {
+  color: #586069;
+  font-size: 14px;
+  padding-bottom: 3em;
+}
+
+.work-page__role-item {
+  border: 1px solid #01a2c4;
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: #01a2c4;
+  margin: 5px;
+  display: inline-block;
 }
 
 .work-page__content {

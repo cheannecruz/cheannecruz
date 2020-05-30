@@ -39,7 +39,6 @@ export default {
   },
   data: function () {
     return {
-
     };
   },
   metaInfo: {

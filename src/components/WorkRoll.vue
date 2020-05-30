@@ -14,7 +14,7 @@
           <h2 class="work-roll__item-title">
             {{edge.node.title}}
           </h2>
-          <small class="work-roll__item-date">{{formatDate(edge.node.dateCreated)}}</small>
+          <small class="work-roll__item-project">{{edge.node.projectName}}</small>
 
           <small class="work-roll__item-summary">{{edge.node.summary}}</small>
 
@@ -36,24 +36,6 @@
     </div>
   </section>
 </template>
-
-<page-query>
-  query {
-    works: allWorkPost(sortBy: "order", order: ASC) {
-      edges {
-        node {
-          id
-          title
-          summary
-          path
-          thumbImage
-          order
-          dateCreated
-        }
-      }
-    }
-  }
-</page-query>
 
 <script>
   export default {
@@ -257,10 +239,11 @@
   padding-top: 0.5rem;
 }
 
-.work-roll__item-date {
+.work-roll__item-project {
   color: #586069;
   font-size: 14px;
   line-height: 2;
+  text-transform: uppercase;
 }
 
 .work-roll__heading {

@@ -9,7 +9,7 @@
           <span>Hello I'm Cheryl Cruz,</span>
         </span>
         <vue-typed-js
-          :strings='["Frontent<br/>Developer.","UI Designer.","Aspiring UX<br/>Practitioner.","Digital Unicorn<br/>... &#129412; &#128517;"]'
+          :strings='["Frontend<br/>Developer.","UI Designer.","Aspiring UX<br/>Practitioner.","Digital Unicorn<br/>... &#129412; &#128517;"]'
           :loop="true"
           :typeSpeed="100"
           :backDelay="3000"
