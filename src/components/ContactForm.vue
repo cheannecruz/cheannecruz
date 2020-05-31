@@ -66,6 +66,13 @@
 </script>
 
 <style lang='scss'>
+.contact-form {
+  display: none;
+
+  &.v--modal-overlay {
+    display: block;
+  }
+}
 .contact-form__content {
   background-color: rgb(33, 33, 33);
   height: 500px;
