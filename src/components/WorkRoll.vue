@@ -83,6 +83,7 @@
   justify-content: center;
   padding-right: 3rem;
   max-width: 360px;
+  order: 1;
 
   @media only screen and (max-width: 768px) {
     padding-right: 0rem;
@@ -177,6 +178,7 @@
   align-content: center;
   transition: all 0.5s ease 0s;
   -webkit-transition: all 0.5s ease 0s;
+  order: 2;
 
   img {
     width: 100%;
@@ -218,8 +220,16 @@
 
 .work-roll__item {
   &:nth-child(odd) {
+    .work-roll__item-details {
+      order: 2;
+      padding-right: 0rem;
+      padding-left: 3rem;
+    }
     .work-roll__item-image {
+      order: 1;
+
       &::before {
+        left: -50px;
         background: linear-gradient(223.34deg, rgb(108, 110, 231) 0%, rgb(241, 87, 115) 100%);
 
         &:hover {
@@ -227,6 +237,20 @@
             opacity: 0.80;
           }
         }
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      top: 25px;
+      right: -30px;
+
+      .work-roll__item-details {
+        order: 1;
+        padding-right: 0rem;
+        padding-left: 0rem;
+      }
+      .work-roll__item-image {
+        order: 2;
       }
     }
   }

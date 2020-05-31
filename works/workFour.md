@@ -38,7 +38,7 @@ Login screen made from the style-guide elements.
 
 </div>
 
-<h2>Kraite Illistrations</h2>
+<h2>Kraite Illustrations</h2>
 
 Here are some of the illustrations I made for Kraite.
 
