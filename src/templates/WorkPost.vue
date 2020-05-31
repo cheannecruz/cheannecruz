@@ -190,6 +190,15 @@
     }
   }
 
+  .kraite-logo {
+    min-width: 300px;
+
+    img {
+      margin: 30px 120px;
+      max-width: 200px;
+    }
+  }
+
   p {
     margin: 2em 0;
     text-align: justify;
