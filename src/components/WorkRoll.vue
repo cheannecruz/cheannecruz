@@ -65,7 +65,7 @@
 .work-roll__item {
   display: flex;
   justify-content: space-between;
-  margin-top: 5rem;
+  margin-top: 8rem;
 
   &:first-child {
     margin-top: 0;
@@ -74,6 +74,7 @@
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     justify-content: flex-start;
+    margin-top: 5rem;
   }
 }
 
@@ -106,7 +107,7 @@
   display: inline-block;
   padding: 0px 70px 0px 20px;
   margin: 2rem 0;
-  align-self: flex-start;
+  align-self: flex-end;
   color: #c648b1;
   text-decoration: none;
   font-weight: 700;
@@ -224,6 +225,10 @@
       order: 2;
       padding-right: 0rem;
       padding-left: 3rem;
+
+      .work-roll__item-link {
+        align-self: flex-start;
+      }
     }
     .work-roll__item-image {
       order: 1;
@@ -248,6 +253,10 @@
         order: 1;
         padding-right: 0rem;
         padding-left: 0rem;
+
+        .work-roll__item-link {
+          align-self: flex-start;
+        }
       }
       .work-roll__item-image {
         order: 2;
