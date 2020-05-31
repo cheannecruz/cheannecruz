@@ -41,6 +41,9 @@ export default {
     return {
     };
   },
+  mounted () {
+    this.$modal.hide('contact-form');
+  },
   metaInfo: {
     meta: [
       { key: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' }
