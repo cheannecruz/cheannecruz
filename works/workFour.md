@@ -30,7 +30,7 @@ Kraite.com is a web and iOS application currently being made from the ground-up.
 
 </div>
 
-Login screen made from the style-guide elemnts.
+Login screen made from the style-guide elements.
 
 <div class="img-holder img-holder--full-size" data-aos="fade-up">
 
