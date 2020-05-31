@@ -13,8 +13,8 @@
       <nav class="nav" :class="{'collapsed': isCollapsed}" @click="toggleActive(false)">
         <div>
           <g-link class="nav__link" to="/" exact :class="activePage == 'home' ? 'active' : ''">Home</g-link>
-          <g-link class="nav__link" to="/about/" exact>About</g-link>
           <g-link class="nav__link" to="/works/">Works</g-link>
+          <g-link class="nav__link" to="/about/" exact>About</g-link>
           <a class="nav__link" @click="showContact();">Contact</a>
         </div>
       </nav>

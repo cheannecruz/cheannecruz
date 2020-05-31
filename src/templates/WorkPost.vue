@@ -34,6 +34,7 @@
       mainBannerImage
       dateCreated
       projectName
+      projectURL
     }
   }
 </page-query>
@@ -169,6 +170,26 @@
     }
   }
 
+  .img-holder--full-size {
+    max-width: 100%;
+    width: 100%;
+
+    img {
+      margin: 0px;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .nifty-logo {
+    min-width: 300px;
+
+    img {
+      margin: 20px 120px;
+      max-width: 80px;
+    }
+  }
+
   p {
     margin: 2em 0;
     text-align: justify;
@@ -196,6 +217,75 @@
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+  }
+}
+
+.ending-note {
+  width: 100%;
+  text-align: center;
+  color: #01a2c4;
+}
+
+.work-page__button-link {
+  display: block;
+  padding: 0px 70px 0px 20px;
+  align-self: flex-end;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  position: relative;
+  line-height: 55px;
+  transition: all 0.5s ease;
+  -webkit-transition: all .5s ease;
+  border: 2px solid #f85ccf;
+  background: #f85ccf;
+  min-width: 150px;
+  max-width: 150px;
+  border-radius: 3px;
+  margin: 0 auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: 30px;
+    bottom: 42%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 20;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    -webkit-transition: all .5s ease;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    z-index: 20;
+    right: 18px;
+    bottom: 12px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+    -webkit-transition: all .5s ease;
+  }
+
+  &:hover {
+    border: 2px solid #c648b1;
+    background: #c648b1;
+  }
+
+  &:disabled {
+    opacity: 0.5;
   }
 }
 </style>

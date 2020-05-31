@@ -7,18 +7,20 @@
       <h2 class="contact-form__heading">Let's Talk!</h2>
       <p>Got an idea or an existing project you want to collaborate on? Send me a message!</p>
       <div v-if="isSending" class="loading">Sendig...</div>
+      <div v-if="isSent" class="loading">Message Sent! Thank you!</div>
 
       <form class="form" @submit="onSubmit">
         <input required name="name" v-model='contact.name' placeholder="Name" type="text" autocomplete="off">
         <input required name="email" v-model="contact.email" placeholder="E-mail" type="email" autocomplete="off">
-        <textarea name="message" v-model="contact.message" rows="4" placeholder="Message"></textarea>
-        <button class="button">Send</button>
+        <textarea name="body" v-model="contact.body" rows="4" placeholder="Message"></textarea>
+        <button class="button" :disabled="isSent">Send</button>
       </form>
     </div>
   </modal>
 </template>
 
 <script>
+  import axios from 'axios';
   export default {
     data () {
       return {
@@ -27,7 +29,8 @@
           email: '',
           message: '',
         },
-        isSending: false
+        isSending: false,
+        isSent: false
       }
     },
     methods: {
@@ -46,10 +49,10 @@
             form.append(field, this.contact[field]);
           }
           // Send form to server
-          this.$http.post('/app.php', form).then((response) => {
-            console.log(response);
+          axios.post('https://api.niftystack.io/v1/messages/', form).then((response) => {
             this.clearForm();
             this.isSending = false;
+            this.isSent = true;
           }).catch((e) => {
             console.log(e)
           });
@@ -90,6 +93,12 @@
 .contact-form__heading {
   color: #fff;
   font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.loading {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 1rem;
 }
 
 .contact-form .form {
@@ -165,10 +174,11 @@
     border: 2px solid #c648b1;
     background: #c648b1;
   }
+
+  &:disabled {
+    opacity: 0.5;
+  }
 }
-
-
-
 
 .contact-form input[type="email"],
 .contact-form input[type="text"],
