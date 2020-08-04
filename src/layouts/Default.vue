@@ -1,5 +1,6 @@
 <template>
   <div class="layout">
+    <pagePreloader />
     <mainHeader />
     <div class="main-body">
       <div class="main-body-content">
@@ -31,11 +32,13 @@
 <script>
 import mainHeader from '~/components/MainHeader';
 import contactForm from '~/components/ContactForm';
+import pagePreloader from '~/components/pagePreloader';
 
 export default {
   components: {
       mainHeader,
-      contactForm
+      contactForm,
+      pagePreloader
   },
   data: function () {
     return {

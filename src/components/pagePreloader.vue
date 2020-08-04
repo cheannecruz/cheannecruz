@@ -1,20 +1,29 @@
 <template>
-  <div class="page-preloader">
-    <logoImg />
-  </div>
+  <transition name="fade">
+    <div v-if="show" class="page-preloader">
+      <g-image src="@/assets/images/ccunicorn.svg" class="page-preloader__logo" immediate="true"/>
+    </div>
+  </transition>
+
 </template>
 
 <script>
-  import logoImg from '~/assets/images/ccunicorn.svg'
   export default {
     data () {
       return {
-        collapsed: false
+        show: true
       }
     },
-    components: {
-      logoImg
+    mounted(){
+      if(Boolean(this.show)) this.showToggle()
     },
+    methods: {
+      showToggle(){
+        setTimeout(() => {
+          this.show = false
+        }, 700)
+      }
+    }
   };
 </script>
 
@@ -23,7 +32,7 @@
   width: 100%;
   height: 100vh;
   position: fixed;
-  background: #fff;
+  background: rgba($color: #fff, $alpha: 0.8);
   z-index: 999999;
   display: flex;
   align-items: center;
@@ -31,25 +40,24 @@
   top: 0px;
   left: 0px;
 
-  svg {
+  .page-preloader__logo {
     max-width: 150px;
-    transform: scale(1);
-    animation: pulse 2s infinite;
     width: 150px;
   }
 }
 
-@keyframes pulse {
-	0% {
-		transform: scale(0.85);
-	}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s;
+  .page-preloader {
 
-	70% {
-		transform: scale(1);
-	}
+    .page-preloader__logo {
+      transform: scale(1);
+      animation: pulse 2s infinite;
+    }
+  }
+}
 
-	100% {
-		transform: scale(0.85);
-	}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>

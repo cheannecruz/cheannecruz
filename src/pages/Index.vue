@@ -27,6 +27,7 @@
 <script>
 import mainBanner from '~/components/MainBanner';
 import workRoll from '~/components/WorkRoll';
+
 export default {
   metaInfo: {
     title: 'Hello, welcome!'
@@ -38,7 +39,7 @@ export default {
   },
   components: {
     mainBanner,
-    workRoll
+    workRoll,
   },
 }
 </script>

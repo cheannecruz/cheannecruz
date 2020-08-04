@@ -1,7 +1,7 @@
 <template>
   <div class="main-banner"
     data-aos="fade-in"
-    data-aos-delay="3000"
+    data-aos-delay="1000"
   >
     <div class="main-banner__content">
       <div class="main-banner__text">
