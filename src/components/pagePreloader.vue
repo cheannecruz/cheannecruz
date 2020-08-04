@@ -1,7 +1,7 @@
 <template>
   <transition name="fade">
     <div v-if="show" class="page-preloader">
-      <g-image src="@/assets/images/ccunicorn.svg" class="page-preloader__logo" immediate="true"/>
+      <g-image src="~/assets/images/ccunicorn.svg" class="page-preloader__logo" immediate="true"/>
     </div>
   </transition>
 
