@@ -116,7 +116,7 @@ By the end of the course, students will finally have a published website in GitH
 <ul>
 <li>Midkiff, S.F. and DaSilva, L.A., 2000, August. Leveraging the web for synchronous versus asynchronous distance learning. In International Conference on Engineering Education (Vol. 2000, pp. 14-18).</li>
 
-<li>Burt, C., 2021. Study: Pre-recorded videos can boost student learning |. (online) University Business Magazine. Available at https://universitybusiness.com/study-pre-recorded-videos-can-boost-student-learning, Accessed 15 May 2021.</li>
+<li>Burt, C., 2021. Study: Pre-recorded videos can boost student learning. (online) University Business Magazine. Available at https://universitybusiness.com/study-pre-recorded-videos-can-boost-student-learning, Accessed 15 May 2021.</li>
 
 <li>Ma, J., Tucker, C.S., Okudan Kremer, G.E. and Jackson, K.L., 2017. Exposure to digital and hands-on delivery modes in engineering design education and their impact on task completion efficiency. Journal of Integrated Design and Process Science, 21(2), pp.61-78.</li>
 
