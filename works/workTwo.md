@@ -10,6 +10,7 @@ projectName: Crowfessor
 thumbImage: https://drive.google.com/uc?export=view&id=1_aZZABljRxbBKVmF0vg8Ufh409oFV2Ha
 mainBannerImage: https://drive.google.com/uc?export=view&id=1OhOB595GXT0ZtxApVH0TN6N5fxITcmVA
 projectURL: null
+editStart: true
 ---
 
 Crowfessor, is a virtual professor application that will help students especially international students to be more informed about university life and help with personal and professional development.

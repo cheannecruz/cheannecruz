@@ -10,6 +10,7 @@ projectName: null
 thumbImage: https://drive.google.com/uc?export=view&id=1dpsjA7bYRfcNkgNgyoV_UDoaeZyI3OTn
 mainBannerImage: https://drive.google.com/uc?export=view&id=1aISfyfarquXkvEq_saoo8ppoEJlJfqy0
 projectURL: null
+editStart: true
 ---
 
 Today, the shift from traditional media to digital is inevitable in different industries such as health, government, real estate, and education. As these industries undergo digital transformations, the need to create new digital solutions and products that are intuitive, usable, and human-centered is increasing. Along with this change and demand brings about the relevance of Design Reserch.

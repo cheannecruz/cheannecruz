@@ -10,6 +10,7 @@ projectName: Kraite
 thumbImage: https://drive.google.com/uc?export=view&id=1SLBejDpq_I3SHwV6lEv10cOFn9FvR2NP
 mainBannerImage: https://drive.google.com/uc?export=view&id=1ouMKDYYNkJVVvUTTvtQa9pJk1pSy2PMm
 projectURL: https://www.kraite.com
+editStart: true
 ---
 
 Kraite.com is an online platform where users can donate, sell, or trade. At Kraite, you can not only sell your items but can also choose to help and donate as well. We wanted to connect people who wanted to give their preloved items to people who need them the most. You can also trade your collections to people with the same interests or hobby.

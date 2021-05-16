@@ -18,7 +18,7 @@
             {{role}}
           </span>
         </p>
-        <div class="work-page__content" v-html="noFirstLetter($page.post.content)"></div>
+        <div class="work-page__content" v-html="noFirstLetter($page.post.content, $page.post.editStart)"></div>
       </div>
     </section>
   </Layout>
@@ -35,6 +35,7 @@
       dateCreated
       projectName
       projectURL
+      editStart
     }
   }
 </page-query>
@@ -52,10 +53,14 @@
         let formatted_date = current_datetime.getDate() + " " + months[current_datetime.getMonth()] + " " + current_datetime.getFullYear();
         return formatted_date;
       },
-      noFirstLetter(content) {
-        const strip = content.substring(4);
-        const pTag = content.slice(0, 3) + '<span>' + content.slice(3, 4) + '</span>';
-        return pTag + strip;
+      noFirstLetter(content, editStart) {
+        if (editStart === true) {
+          const strip = content.substring(4);
+          const pTag = content.slice(0, 3) + '<span>' + content.slice(3, 4) + '</span>';
+          return pTag + strip;
+        } else {
+          return content;
+        }
       }
     }
   };
@@ -181,6 +186,21 @@
     }
   }
 
+  .vid-holder {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p, p.desc {
+      text-align: center;
+      margin: 0;
+      color: #586069;
+      font-size: 12px;
+    }
+  }
+
   .nifty-logo {
     min-width: 300px;
 
@@ -226,6 +246,50 @@
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+  }
+
+  ul.three-column-flex {
+    list-style: none;
+    padding: 0 0 50px 0;
+    margin: 0;
+    display: flex;
+
+    li {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+
+      div, p {
+        text-align: center;
+      }
+      img {
+        width: 80%;
+      }
+      &::before {
+        display: none !important;
+      }
+      span {
+        display: block;
+        padding: 0 20px;
+        font-size: 16px;
+        margin: 0;
+        line-height: 1.5;
+        font-weight: 700;
+        height: auto;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 667px) {
+    ul.three-column-flex {
+      flex-direction: column !important;
+
+      li {
+        img {
+          width: 60%;
+        }
+      }
+    }
   }
 }
 
@@ -295,6 +359,10 @@
 
   &:disabled {
     opacity: 0.5;
+  }
+
+  strong {
+    font-weight: 800;
   }
 }
 </style>

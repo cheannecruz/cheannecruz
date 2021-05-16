@@ -10,6 +10,7 @@ projectName: NiftyStack.IO
 thumbImage: https://drive.google.com/uc?export=view&id=1vnCxw0NUtofags-I1755ehfcXwRTzeJo
 mainBannerImage: https://drive.google.com/uc?export=view&id=1j07LYfX8afrTx4diHfJI_qnY07KrjZ5w
 projectURL: https://www.niftystack.io
+editStart: true
 ---
 
 The perfect blend of creativity and technology. We are NiftyStack.IO, a design and development company founded in Japan and relocated to Melbourne Australia. Consisting of individuals with experience and expertise in the IT industry for almost a decade, we aim to help businesses scale and achieve their goals.
