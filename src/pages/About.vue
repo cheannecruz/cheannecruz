@@ -12,7 +12,7 @@
       <g-image src="@/assets/images/che.jpeg" class="about-section__img-bg"/>
       <div class="about-section__content">
         <h1 class="about-section__heading">Hello, I'm Cheryl!</h1>
-        <p>I'm a Frontend Web Developer currently working for <a href="https://www.evolution7.com.au" target="_blank">Evolution7</a>, an award winning digital agency based in Melbourne, Australia. <br/><br/>
+        <p>I'm a Frontend Web Developer currently based in Melbourne, Australia and working as a freelance web developer and UI designer.<br/><br/>
         I have a wide range of experience in the IT Industry, from being a Business Systems Analyst to pursuing my passion for designing and building websites. I love designing websites and interfaces and enjoy seeing them come to life through coding. This passion of mine also allowed me to live and work in Japan for a MedTech and Merging & Acquisition company. I moved to Australia to study a Masters Degree in Digital Media and learn more about Design Research and UX.<br/><br/>
         When I'm not busy with work and studies, I usually play video games or do other artsy stuff like handmade crafts, drawing, or painting. I also love to travel and take photos! <br/><br/>
         I'm very open to learning new things, especially concerning UX. I want to be involved in meaningful projects, join an amazing team, and excel more in design and development.  <br/><br/></p>
